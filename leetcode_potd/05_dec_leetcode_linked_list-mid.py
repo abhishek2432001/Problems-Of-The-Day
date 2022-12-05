@@ -11,6 +11,7 @@ slow will have covered half that is middle node
 '''
 
 
+
 def middleNode(head):
     slow = head
     fast = head
