@@ -23,10 +23,9 @@ def sieve(n):
                 for i in range(p * p, n+1, p):
                     primes[i] = 0
             p += 1
-            
         return primes
 def threeDivisors(query, q):
 	num = int(sqrt(max(query)))
-	primes = self.sieve(num)
+	primes = sieve(num)
 	primes = [i for i in range(len(primes)) if primes[i]][2:] # ignoring 0 and 1
 	return [bisect(primes, sqrt(num)) for num in query]
